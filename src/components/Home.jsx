@@ -10,7 +10,9 @@ const Home = () => {
         required
         placeholder="Enter Room code"
         value={RoomCode}
+        onChange={(e) => setRoomCode(e.target.value)}
       />
+      <button type="submit">Enter Room</button>
     </div>
   );
 };
