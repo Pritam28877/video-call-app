@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import conf from "../assets/conf.jpg";
+import Navbar from "./Navbar";
 
 const Home = () => {
   const [RoomCode, setRoomCode] = useState("");
@@ -13,7 +15,7 @@ const Home = () => {
   return (
     <div className=" ">
       {/* Navbar */}
-      {/* <Navbar /> */}
+      <Navbar />
       {/* Hero */}
       <div className="relative h-screen ">
         {/* Image */}
