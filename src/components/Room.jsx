@@ -1,9 +1,8 @@
-
+import { useParams } from "react-router-dom";
 const Room = () => {
-  
-  return (
-    <div>Room</div>
-  )
-}
+  const { roomID } = useParams();
+  console.log(roomID);
+  return <div>Room</div>;
+};
 
-export default Room
+export default Room;
