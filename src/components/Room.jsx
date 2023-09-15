@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import { ZegoUIKitPrebuilt } from "@zegocloud/zego-uikit-prebuilt";
 const Room = () => {
   const { roomID } = useParams();
-  console.log(roomID);
   const meeting = async (element) => {
     const appID = 189493556;
     const serverSecret = "5f7664356598c2f13f3339cdead04d83";
@@ -22,7 +21,7 @@ const Room = () => {
       },
     });
   };
-  return <div>Room</div>;
+  return <div ref={meeting} style={{ width: "100vw", height: "100vh" }}></div>;
 };
 
 export default Room;
